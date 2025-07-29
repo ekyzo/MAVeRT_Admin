@@ -40,8 +40,8 @@ const Sidebar = () => {
           </Link>
           <Link to="/products" style={{ textDecoration: "none" }}>
             <li>
-              <ProductionQuantityLimitsOutlinedIcon />
-              <span>Products</span>
+              <SyncAltOutlinedIcon />
+              <span>Logs</span>
             </li>
           </Link>
           <li>

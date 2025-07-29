@@ -23,7 +23,7 @@ const Home = () => {
           <Chart/>
         </div>
         <div className="listContainer">
-          <div className="listTitle">Latest Transactions</div>
+          <div className="listTitle">Latest Activities</div>
           <Table/>
         </div>
       </div>
