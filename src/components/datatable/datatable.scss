@@ -1,0 +1,111 @@
+.datatable {
+    height: 600px;
+    padding: 20px;
+
+    .dataTableTitle{
+      width: 100%;
+      font-size: 24px;
+      color: gray;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .link{
+        text-decoration: none;
+        color: green;
+        font-size: 16px;
+        font-weight: 400;
+        border: 1px solid green;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  
+    .cellWithImg {
+      display: flex;
+      align-items: center;
+  
+      .cellImg {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+    }
+  
+    .cellWithStatus {
+      display: inline-block;
+      min-width: 75px;
+      text-align: center;
+      padding: 4px 8px;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: capitalize;
+      border-radius: 999px; // pill shape
+      line-height: 2;
+      white-space: nowrap;
+  
+      &.active {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.15);
+      }
+      &.pending {
+        color: goldenrod;
+        background-color: rgba(189, 189, 3, 0.15);
+      }
+      &.inactive {
+        color: red;
+        background-color: rgba(175, 3, 3, 0.15);
+      }
+    }
+  
+    .cellAction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      
+        .viewButton,
+        .deleteButton {
+            margin-top: 7px;
+          padding: 2px 4px;
+          min-width: 70px;
+          height: 32px;
+          border-radius: 6px;
+          font-size: 14px;
+          font-weight: 400;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          border: 1px solid;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          user-select: none;
+        }
+      
+        .viewButton {
+          color: #1e40af; // dark blue
+          border-color: rgba(30, 64, 175, 0.6);
+          background-color: rgba(30, 64, 175, 0.05);
+      
+          &:hover {
+            background-color: rgba(30, 64, 175, 0.15);
+          }
+        }
+      
+        .deleteButton {
+          color: #dc2626; // crimson red
+          border-color: rgba(220, 38, 38, 0.6);
+          background-color: rgba(220, 38, 38, 0.05);
+      
+          &:hover {
+            background-color: rgba(220, 38, 38, 0.15);
+          }
+        }
+      }      
+  }
+  

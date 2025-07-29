@@ -1,0 +1,87 @@
+$primary: #009688; 
+$secondary: #0d3b66;    
+$bg-light: #f1fafa;
+
+.login {
+  height: 100vh;
+  background: linear-gradient(to bottom right, $bg-light, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+
+  .login-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    .branding {
+      margin-bottom: 2rem;
+
+      .logo-icon {
+        font-size: 3.5rem;
+        color: $primary;
+        margin-bottom: 0.5rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        color: $secondary;
+        margin: 0;
+      }
+
+      .subtitle {
+        color: #666;
+        font-size: 0.95rem;
+        margin-top: 0.4rem;
+      }
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        padding: 0.9rem 1rem;
+        margin-bottom: 1.2rem;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        font-size: 1rem;
+        transition: border-color 0.3s, box-shadow 0.3s;
+
+        &:focus {
+          border-color: $primary;
+          box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.2);
+          outline: none;
+        }
+      }
+
+      button {
+        background-color: $primary;
+        color: white;
+        padding: 0.85rem;
+        font-size: 1.05rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($primary, 10%);
+        }
+      }
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  }
+}
