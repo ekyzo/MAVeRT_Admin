@@ -12,7 +12,7 @@ const List = () => {
     const rows = [
       {
         id: 12313,
-        product: "alibaba",
+        product: "alibabas",
         img: "https://media.istockphoto.com/id/912065944/vector/whatever-word-pink-sticker.jpg?s=612x612&w=0&k=20&c=t8tF9VkSO0D5qp2Og1ixWRd2HzGNFpUv8fEb5hRxV60=",
         customer: "John Smith",
         date: "1 maradj",
