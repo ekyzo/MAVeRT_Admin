@@ -10,38 +10,38 @@ const Featured = () => {
   return (
     <div className="featured">
       <div className="top">
-        <h1 className="title">Total Revenue</h1>
+        <h1 className="title">Total Exercise</h1>
         <MoreVertOutlinedIcon fontSize="small" />
       </div>
       <div className="bottom">
         <div className="featuredChart">
           <CircularProgressbar value={70} text="70%" strokeWidth={5} />
         </div>
-        <p className="title">Total sales made today</p>
-        <p className="amount">RM420</p>
+        <p className="title">Total exercises made today</p>
+        <p className="amount">70</p>
         <p className="desc">
-          Previous transactions processing. Last payments may not be included
+          Previous activities processing. Latest exercises may not be included
         </p>
         <div className="summary">
           <div className="item">
             <div className="itemTitle">Target</div>
             <div className="itemResult negative">
               <KeyboardArrowDownOutlinedIcon fontSize="small" />
-              <div className="resultAmount">RM12.4k</div>
+              <div className="resultAmount">100</div>
             </div>
           </div>
           <div className="item">
             <div className="itemTitle">Last Week</div>
             <div className="itemResult positive">
               <KeyboardArrowUpOutlinedIcon fontSize="small" />
-              <div className="resultAmount">RM12.4k</div>
+              <div className="resultAmount">67</div>
             </div>
           </div>
           <div className="item">
             <div className="itemTitle">Last Month</div>
             <div className="itemResult positive">
               <KeyboardArrowUpOutlinedIcon fontSize="small" />
-              <div className="resultAmount">RM12.4k</div>
+              <div className="resultAmount">256</div>
             </div>
           </div>
         </div>
