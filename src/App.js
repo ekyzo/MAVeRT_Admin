@@ -6,6 +6,7 @@ import New from "./pages/new/New";
 import AdminProfilePage from "./pages/adminprofile/AdminProfilePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { productInputs, userInputs } from "./formSource";
+import SettingsPage from "./pages/settings/SettingsPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           </Route>
 
           <Route path="/profile" element={<AdminProfilePage />} />
+          <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </Router>
     </div>

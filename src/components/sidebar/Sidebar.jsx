@@ -53,10 +53,12 @@ const Sidebar = () => {
             <span>Profile</span>
           </li>
           </Link>
+          <Link to="/settings" style={{ textDecoration: "none" }}>
           <li>
             <SettingsOutlinedIcon />
             <span>Settings</span>
           </li>
+          </Link>
           <li>
             <LogoutOutlinedIcon />
             <span>Logout</span>
