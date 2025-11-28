@@ -3,31 +3,33 @@ import Login from "./pages/login/Login";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
-import ProtectedRoute from "./components/ProtectedRoute"; //NANTI TAMBAH MACAM NI [element={ ____ <Home /> _____}]
-import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter, Routes } from "react-router-dom";
+import AdminProfilePage from "./pages/adminprofile/AdminProfilePage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { productInputs, userInputs } from "./formSource";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Routes>
-          <Route path="/">
-            <Route index element={<Login />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="users">
-              <Route index element={<List />} />
-              <Route path=":userId" element={<Single />} />
-              <Route path="new" element={<New inputs = {userInputs} title="Add New User"/>} />
-            </Route>
-            <Route path="products">
-              <Route index element={<List />} />
-              <Route path=":productId" element={<Single />} />
-              <Route path="new" element={<New inputs = {productInputs} title= "Add New Product"/>} />
-            </Route>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+
+          <Route path="/users">
+            <Route index element={<List />} />
+            <Route path=":userId" element={<Single />} />
+            <Route path="new" element={<New inputs={userInputs} title="Add New User" />} />
           </Route>
+
+          <Route path="/exercises">
+            <Route index element={<List />} />
+            <Route path=":exerciseId" element={<Single />} />
+            <Route path="new" element={<New inputs={productInputs} title="Add New Product" />} />
+          </Route>
+
+          <Route path="/profile" element={<AdminProfilePage />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

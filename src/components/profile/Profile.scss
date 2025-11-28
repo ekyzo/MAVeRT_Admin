@@ -1,0 +1,109 @@
+.profile-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px 50px;
+  max-width: 900px; // card width
+  margin: 20px auto; // center horizontally with some top/bottom spacing
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 3px solid #e0e0e0;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+
+  .edit-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #115293;
+    }
+  }
+
+  .edit-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: #555;
+
+      input {
+        margin-top: 6px;
+        padding: 10px 12px;
+        font-size: 15px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        transition: border 0.2s;
+
+        &:focus {
+          border-color: #1976d2;
+          outline: none;
+        }
+      }
+    }
+
+    .form-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      margin-top: 10px;
+
+      button {
+        padding: 10px 25px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      button[type="submit"] {
+        background-color: #1976d2;
+        color: #fff;
+
+        &:hover {
+          background-color: #115293;
+        }
+      }
+
+      button[type="button"] {
+        background-color: #e53935;
+        color: #fff;
+
+        &:hover {
+          background-color: #ab1f24;
+        }
+      }
+    }
+  }
+}

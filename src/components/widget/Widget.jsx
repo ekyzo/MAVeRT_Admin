@@ -3,7 +3,9 @@ import "./widget.scss"
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/Person2Outlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import DirectionsWalkOutlinedIcon from '@mui/icons-material/DirectionsWalkOutlined';
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
+import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined'; 
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 
 const Widget = ( { type }) => {
@@ -28,33 +30,33 @@ const Widget = ( { type }) => {
           ),
         };
         break;
-      case "order":
+      case "exercise":
         data = {
-          title: "ORDERS",
+          title: "EXERCISES",
           isMoney: false,
-          link: "View all orders",
+          link: "View all exercises",
           icon: (
-            <ShoppingCartOutlinedIcon
+            <DirectionsWalkOutlinedIcon
               className="icon"
               style={{ color: "#B45309", backgroundColor: "#FEF3C7" }}
             />
           ),
         };
         break;
-      case "earning":
+      case "time":
         data = {
-          title: "EARNINGS",
+          title: "DURATION",
           isMoney: true,
-          link: "View net earnings",
+          link: "View exercise duration",
           icon: (
-            <MonetizationOnOutlinedIcon
+            <AccessTimeOutlinedIcon
               className="icon"
               style={{ color: "#047857", backgroundColor: "#D1FAE5" }}
             />
           ),
         };
         break;
-      case "balance":
+      /*case "balance":
         data = {
           title: "BALANCE",
           isMoney: true,
@@ -66,7 +68,7 @@ const Widget = ( { type }) => {
             />
           ),
         };
-        break;
+        break;*/
       default:
         break;
     }
@@ -77,8 +79,8 @@ const Widget = ( { type }) => {
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">
-          {data.isMoney && "RM"}
-          {amount}
+        {amount}
+          {data.isMoney && " minutes"}
         </span>
         <span className="link">{data.link}</span>
       </div>
