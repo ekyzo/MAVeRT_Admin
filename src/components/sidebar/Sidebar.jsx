@@ -2,12 +2,9 @@ import "./sidebar.scss";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
 import Person2OutlinedIcon from "@mui/icons-material/Person2Outlined";
 import ProductionQuantityLimitsOutlinedIcon from "@mui/icons-material/ProductionQuantityLimitsOutlined";
+import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
 import DeliveryDiningOutlinedIcon from "@mui/icons-material/DeliveryDiningOutlined";
-import AnalyticsOutlinedIcon from "@mui/icons-material/AnalyticsOutlined";
-import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
-import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
-import SyncAltOutlinedIcon from "@mui/icons-material/SyncAltOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
@@ -38,30 +35,30 @@ const Sidebar = () => {
               <span>Users</span>
             </li>
           </Link>
-          <Link to="/products" style={{ textDecoration: "none" }}>
+          <Link to="/exercises" style={{ textDecoration: "none" }}>
             <li>
-              <ProductionQuantityLimitsOutlinedIcon />
-              <span>Products</span>
+              <FitnessCenterOutlinedIcon />
+              <span>Exercises</span>
             </li>
           </Link>
           <li>
             <ListAltOutlinedIcon />
-            <span>Orders</span>
-          </li>
-          <li>
-            <DeliveryDiningOutlinedIcon />
-            <span>Delivery</span>
+            <span>Others</span>
           </li>
 
           <p className="title">USER</p>
+          <Link to="/profile" style={{ textDecoration: "none" }}>
           <li>
             <AccountCircleOutlinedIcon />
             <span>Profile</span>
           </li>
+          </Link>
+          <Link to="/settings" style={{ textDecoration: "none" }}>
           <li>
             <SettingsOutlinedIcon />
             <span>Settings</span>
           </li>
+          </Link>
           <li>
             <LogoutOutlinedIcon />
             <span>Logout</span>

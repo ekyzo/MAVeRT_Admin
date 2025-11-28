@@ -1,12 +1,16 @@
 .datatable {
-    height: 600px;
-    padding: 20px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  height: auto;
 
     .dataTableTitle{
-      width: 100%;
-      font-size: 24px;
-      color: gray;
-      margin-bottom: 10px;
+      font-size: 20px;
+      color: #444;
+      font-weight: 600;
+      margin-bottom: 20px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -14,12 +18,15 @@
       .link{
         text-decoration: none;
         color: green;
-        font-size: 16px;
-        font-weight: 400;
         border: 1px solid green;
-        padding: 5px;
-        border-radius: 5px;
-        cursor: pointer;
+        padding: 6px 10px;
+        border-radius: 6px;
+        transition: 0.2s;
+
+        &:hover {
+          background: green;
+          color: white;
+        }
       }
     }
   
@@ -108,4 +115,19 @@
         }
       }      
   }
+
+  .MuiDataGrid-root {
+  border: none !important;
+  background: white;
+}
+
+.MuiDataGrid-columnHeaders {
+  background: #f0f2f5;
+  font-weight: bold;
+}
+
+.MuiDataGrid-row:hover {
+  background: #f9fafb;
+}
+
   

@@ -9,13 +9,13 @@ export const userInputs = [
     id: 2,
     label: "Name",
     type: "text",
-    placeholder: "john doe",
+    placeholder: "Your name",
   },
   {
     id: 3,
     label: "Email",
     type: "mail",
-    placeholder: "john_doe@gmail.com",
+    placeholder: "youremail@example.com",
   },
   {
     id: 4,
@@ -32,13 +32,13 @@ export const userInputs = [
     id: 6,
     label: "Address",
     type: "text",
-    placeholder: "Shibuya, Tokyo",
+    placeholder: "Location",
   },
   {
     id: 1,
     label: "Country",
     type: "text",
-    placeholder: "Japan",
+    placeholder: "Your Country",
   },
 ];
 
